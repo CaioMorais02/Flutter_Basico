@@ -20,21 +20,29 @@ class HomePage extends StatelessWidget {
           ),
           bottom: TabBar(
             tabs: [
-              Tab(text: "TAB 1",),
-              Tab(text: "TAB 2",),
-              Tab(text: "TAB 2",),
+              Tab(
+                text: "TAB 1",
+              ),
+              Tab(
+                text: "TAB 2",
+              ),
+              Tab(
+                text: "TAB 2",
+              ),
             ],
           ),
         ),
-        body: TabBarView(children: [
-          _body(context),
-          Container(
-            color: Colors.green,
-          ),
-          Container(
-            color: Colors.yellow,
-          ),
-        ],),
+        body: TabBarView(
+          children: [
+            _body(context),
+            Container(
+              color: Colors.green,
+            ),
+            Container(
+              color: Colors.yellow,
+            ),
+          ],
+        ),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
           onPressed: () {
@@ -156,7 +164,7 @@ class HomePage extends StatelessWidget {
 
   _onClickToast() {
     Fluttertoast.showToast(
-        msg: "Rola",
+        msg: "Toast!",
         toastLength: Toast.LENGTH_LONG,
         gravity: ToastGravity.CENTER,
         timeInSecForIosWeb: 1,
